@@ -4,7 +4,7 @@ ARG version=21.0.1.12.1
 
 # Please note that the THIRD-PARTY-LICENSE could be out of date if the base image has been updated recently.
 # The Corretto team will update this file but you may see a few days' delay.
-RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz && \
+RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://github.com/ztcaoll222/corretto-docker/raw/main/21/jdk/alpine/3.18/THIRD-PARTY-LICENSES-20200824.tar.gz && \
     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - && \
     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz && \
     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz && \
